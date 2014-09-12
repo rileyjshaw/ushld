@@ -1,0 +1,27 @@
+{
+  "name": "ushld",
+  "version": "0.0.0",
+  "description": "Tell people on the internet what they should do",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/rileyjshaw/ushld.git"
+  },
+  "keywords": [
+    "you",
+    "should",
+    "ushld"
+  ],
+  "author": "rileyjshaw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rileyjshaw/ushld/issues"
+  },
+  "homepage": "https://github.com/rileyjshaw/ushld",
+  "dependencies": {
+    "express": "~4.9.0"
+  }
+}
