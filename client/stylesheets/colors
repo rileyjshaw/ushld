@@ -1,0 +1,55 @@
+.purple-ish {
+  color: #f3c;
+  background-color: #73a;
+}
+.red-ish {
+  color: #f40;
+  background-color: #f90;
+}
+.aqua-ish {
+  color: #0c5;
+  background-color: #08a;
+}
+
+.blue-ish {
+  color: #534;
+  background-color: #079;
+}
+
+.lav-ish {
+  color: #f40;
+  background-color: #704;
+}
+
+.brick-ish {
+  color: #f09;
+  background-color: #a30;
+}
+.list {
+  color: tomato;
+  background-color: #fff;
+}
+.salmon {
+  background-color: #DB7769;
+  color: #FFF;
+}
+.deepblue {
+  background-color: #2A2A39;
+  color: #F75454;
+}
+.purples {
+  background-color: #442C48;
+  color: #72427A;
+}
+.grays {
+  background-color: #333;
+  color: #999;
+}
+.blues {
+  background-color: #34495E;
+  color: #2980B9;
+}
+.red {
+  background-color: #DC554F;
+  color: #FFF;
+}
