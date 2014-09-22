@@ -1,4 +1,13 @@
+var redis = require('redis');
+var url = require('url');
 var express = require('express');
+
+// redis setup
+var redisURL = url.parse(process.env.REDISCLOUD_URL);
+var redisClient = redis.createClient(redisURL.port, redisURL.hostname, {no_ready_check: true});
+redisClient.auth(redisURL.auth.split(":")[1]);
+
+// express setup
 var app = express();
 var router = new express.Router({
 	caseSensitive: false

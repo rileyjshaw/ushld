@@ -24,7 +24,8 @@
   "dependencies": {
     "express": "~4.9.0",
     "fitter-happier-text": "0.0.3",
-    "jade": "~1.7.0"
+    "jade": "~1.7.0",
+    "redis": "~0.12.1"
   },
   "devDependencies": {
     "gulp-load-plugins": "~0.6.0",
