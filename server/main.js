@@ -6,11 +6,12 @@ var getCode = require('./crockford.js');
 var codeLength = 3;
 
 // redis setup
-var dbURL, db = redis.createClient(dbURL.port, dbURL.hostname, {no_ready_check: true});
+var dbURL, db;
 if (process.env.REDISCLOUD_URL) {
 	dbURL = url.parse(process.env.REDISCLOUD_URL);
-	client.auth(dbURL.auth.split(":")[1]);
-} else dbURL = 'redis://localhost:6379';
+	db = redis.createClient(dbURL.port, dbURL.hostname, {no_ready_check: true});
+	db.auth(dbURL.auth.split(":")[1]);
+} else db = redis.createClient(); // 'redis://localhost:6379';
 
 // express setup
 var app = express();
