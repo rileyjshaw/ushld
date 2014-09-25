@@ -1,11 +1,13 @@
 html, body, .vcent
 	height: 100%
 
-body, input
+body, input[type="text"], button
 	margin: 0
 	font-family: 'Roboto', sans-serif
 	text-align: center
 	text-transform: uppercase
+
+body, input
 	color: #f3c
 	background: #73a
 
@@ -16,11 +18,23 @@ body, input
 .centerContainer
 	width: 480px
 
-input[type="text"]
+input[type="text"], button
+	display: inline-block
+	vertical-align: middle
 	height: 96px
 	line-height: 96px
-	width: 100%
 	border: 0 solid #f3c
-	border-width: 0 6px 6px 0
 	outline: 0
+
+input[type="text"]
+	width: 80%
+	box-sizing: border-box
+	border-bottom-width: 6px
 	font-size: 60px
+
+button
+	width: 20%
+	font-size: 24px
+	color: #73a
+	background: #f3c
+	cursor: pointer
