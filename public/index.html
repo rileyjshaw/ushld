@@ -8,9 +8,20 @@
 </head>
 <body>
 	<div class="vcent"></div>
-	<div class="messageContainer">
-		<p>Created by rileyjshaw</p>
+	<div class="centerContainer">
+		<div class="messageContainer">
+			<p>Tell people on</p>
+			<p>the internet what they</p>
+			<p>should do</p>
+		</div>
+		<form action="/messages" method="post">
+			<input type="text" id="input" name="message">
+			<input type="submit">
+		</form>
 	</div>
 	<script src='main.js'></script>
+	<script>
+		document.getElementById('input').focus();
+	</script>
 </body>
 </html>
