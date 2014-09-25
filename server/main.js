@@ -2,6 +2,7 @@ var redis = require('redis');
 var url = require('url');
 var express = require('express');
 var bodyParser = require('body-parser');
+var validator = require('validator');
 var getCode = require('./crockford.js');
 var codeLength = 3;
 
@@ -30,7 +31,7 @@ router.use(express.static(__dirname + "/../public"));
 
 router.route('/messages')
 	.post(function (request, response, next) {
-		var message = request.body.message;
+		var message = validator.escape(request.body.message);
 		var code = getCode();
 		var code32 = code.toString(36);
 
@@ -44,7 +45,7 @@ router.route('/messages')
 router.route('/:message')
 	.get(function (request, response, next) {
 		// the passed in string
-		var message = request.params.message;
+		var message = validator.escape(request.params.message);
 
 		// if it could be a code
 		if (message.length === codeLength) {

@@ -26,7 +26,8 @@
     "fitter-happier-text": "0.0.3",
     "jade": "~1.7.0",
     "redis": "~0.12.1",
-    "body-parser": "~1.9.0"
+    "body-parser": "~1.9.0",
+    "validator": "~3.19.0"
   },
   "devDependencies": {
     "gulp-load-plugins": "~0.6.0",
